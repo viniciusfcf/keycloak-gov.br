@@ -31,6 +31,8 @@ A arquitetura da solução será composta por:
 - **Aplicações e Sistemas da Organização**: Serviços que serão integrados ao Keycloak para autenticação federada.
 - **Gov.br (Simulado)**: O sistema de autenticação e identidade do governo brasileiro simulado, com foco na autenticação e autorização de cidadãos.
 
+![Keycloak como Identity Provider](kc-identity-provider.jpg "Keycloak como Identity Provider")
+
 ### Fluxo de Autenticação (Simplificado)
 
 1. O usuário tenta acessar um serviço da organização.
