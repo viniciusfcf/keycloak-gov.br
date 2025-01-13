@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:17.2
+    volumes:
+      - ./gov.br-db.sql:/docker-entrypoint-initdb.d/create-db.sql
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: govbr
+      POSTGRES_PASSWORD: govbr
+      POSTGRES_DB: govbr
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
