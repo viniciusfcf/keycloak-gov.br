@@ -58,12 +58,15 @@ Step Up Authentication é um processo de autenticação adicional que é acionad
 ![Step Up Authentication](step-up-authentication.png "Step Up Authentication")
 
 
+## Modelo do banco de dados do gov.br
+![alt text](gov.br-db-diagram.png)
+
 ## Pré-requisitos
 
 Antes de começar, você precisará de:
 
 - **Docker** (para rodar o Keycloak localmente).
-- **Java** (caso queira personalizar o Keycloak).
+- **Java** (para personalizar o Keycloak).
 - **Git** (para clonar este repositório).
 - **Navegador** (para acessar o Keycloak e a interface de usuário).
 
