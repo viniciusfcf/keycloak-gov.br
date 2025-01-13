@@ -81,7 +81,6 @@ Antes de começar, você precisará de:
 ## Fontes
 
 ## FAQ
-[Área do desenvolvedor gov.br](https://www.gov.br/ans/pt-br/centrais-de-conteudo/manuais-do-portal-operadoras/area-do-desenvolvedor)
-[Roteiro de Integração do Login Único
-](https://acesso.gov.br/roteiro-tecnico/index.html)
-[Solicitar Credencial do Login Único](https://acesso.gov.br/roteiro-tecnico/solicitacaocredencialprocesso.html)
+- [Área do desenvolvedor gov.br](https://www.gov.br/ans/pt-br/centrais-de-conteudo/manuais-do-portal-operadoras/area-do-desenvolvedor)
+- [Roteiro de Integração do Login Único](https://acesso.gov.br/roteiro-tecnico/index.html)
+- [Solicitar Credencial do Login Único](https://acesso.gov.br/roteiro-tecnico/solicitacaocredencialprocesso.html)
