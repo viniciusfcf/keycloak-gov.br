@@ -34,7 +34,27 @@ A arquitetura da solução será composta por:
 ### Fluxo de Autenticação 
 ![Keycloak como Identity Provider](kc-identity-provider.jpg "Keycloak como Identity Provider")
 
+### PassKeys
+
+Sim, o **gov.br** pode ficar indisponível, e na verdade foram algumas horas em 2024, e se seu sistema tiver um nível disponibilidade maior, o que podemos fazer? Uma alternativa seria disponibilizar uma forma de login alternativa no Keycloak da organização.
+
+#### Níveis de Disponibilidade
+
+| Disponibilidade | Inatividade Anual            | Inatividade Mensal            | Inatividade Semanal       |
+|------------------|-----------------------------|-------------------------------|---------------------------|
+| **99,999%**      | 5 minutos e 15 segundos     | 26 segundos                   | 6 segundos                |
+| **99,99%**       | 52 minutos e 35 segundos    | 4 minutos e 23 segundos       | 1 minuto                  |
+| **99,9%**        | 8 horas, 45 minutos         | 43 minutos e 12 segundos      | 10 minutos                |
+| **99%**          | 3 dias, 15 horas e 36 min   | 7 horas e 12 minutos          | 1 hora e 41 minutos       |
+
+
+Passkeys são uma forma de autenticação sem senha, que utilizam chaves criptográficas para substituir senhas tradicionais. Elas são mais seguras, pois são imunes a ataques de phishing e não podem ser roubadas em vazamentos de dados. Além disso, oferecem conveniência, permitindo login mais rápido e sem a necessidade de lembrar senhas complexas.
+
+
 ### Step Up Authentication
+
+Step Up Authentication é um processo de autenticação adicional que é acionado quando uma transação ou ação de maior risco é identificada, exigindo um nível mais alto de verificação, como biometria ou uma senha temporária, para garantir maior segurança.
+
 ![Step Up Authentication](step-up-authentication.png "Step Up Authentication")
 
 
