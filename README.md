@@ -31,16 +31,12 @@ A arquitetura da solução será composta por:
 - **Aplicações e Sistemas da Organização**: Serviços que serão integrados ao Keycloak para autenticação federada.
 - **Gov.br (Simulado)**: O sistema de autenticação e identidade do governo brasileiro simulado, com foco na autenticação e autorização de cidadãos.
 
+### Fluxo de Autenticação 
 ![Keycloak como Identity Provider](kc-identity-provider.jpg "Keycloak como Identity Provider")
 
-### Fluxo de Autenticação (Simplificado)
+### Step Up Authentication
+![Step Up Authentication](step-up-authentication.png "Step Up Authentication")
 
-1. O usuário tenta acessar um serviço da organização.
-2. A aplicação redireciona o usuário para o **Keycloak** para autenticação.
-3. O **Keycloak** disponibiliza diversas formas de login, dentre elas o **gov.br**
-4. O **gov.br** verifica a identidade e, em caso positivo, retorna um token JWT para o **Keycloak**.
-5. O **Keycloak** retorna um token JWT para a aplicação.
-6. A aplicação utiliza o token JWT para conceder acesso ao usuário.
 
 ## Pré-requisitos
 
